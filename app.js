@@ -1,3 +1,3 @@
 const amIFat = null;
-let something = "something";
-console.log(amIFat);
+let something;
+console.log(amIFat, something); // undefined null
