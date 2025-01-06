@@ -1,3 +1,10 @@
-const amIFat = null;
-let something;
-console.log(amIFat, something); // undefined null
+const wed = "wed";
+const thu = "thu";
+const fri = "fri";
+const sat = "sat";
+const sun = "sun";
+
+const day = [mon , tue , wed , thu , fri , sat , sun];
+
+const nonsense = [1,2,"hello", false, null, true, undefined, "costar"];
+console.log(day, nonsense);
