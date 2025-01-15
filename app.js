@@ -1,3 +1,9 @@
-// player[0] == name
-// player[1] == points
-const player = ["cosar", 121212, false, "little bit"];
+const player = {
+    name: "costar",
+    points: 10,
+    fat: true,
+};
+
+console.log(player);
+player.points = player.points + 15;
+console.log(player.points);
