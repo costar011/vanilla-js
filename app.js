@@ -1,7 +1,5 @@
-function sayHello(name0fPerson, age) {
-  console.log("Hello my name is " + name0fPerson + " and I am " + age );
+function plus(firstNum, secondNum) {
+  console.log(firstNum + secondNum);
 }
 
-sayHello("John", 10);
-sayHello("Mary", 23);
-sayHello("Jane", 21);
+plus(60, 8);
