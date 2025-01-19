@@ -1,5 +1,9 @@
-function plus(firstNum, secondNum) {
-  console.log(firstNum + secondNum);
-}
+const player = {
+  name: "costar",
+  hello: function (otherPersonName) {
+    console.log("hello" + otherPersonName + "nice to meet you");
+  },
+};
 
-plus(60, 8);
+player.hello("cocoa");
+player.hello("costar2");
