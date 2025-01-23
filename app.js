@@ -1,5 +1,7 @@
-const buy = ["potato", "tomato", "cabbage"];
+function plus(po, sal) {
+    console.log(po + sal);
+}
 
-console.log(buy);
-buy[2] = "carrot";
-console.log(buy);
+plus(2, 3);
+plus(5.345435, 62466);
+plus(789, 1.8898);
