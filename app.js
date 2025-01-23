@@ -1,7 +1,9 @@
-function plus(po, sal) {
-    console.log(po + sal);
+const age = 20;
+
+function calculate(age) {
+    return age + 2;
 }
 
-plus(2, 3);
-plus(5.345435, 62466);
-plus(789, 1.8898);
+const krAge = calculate(20);
+
+console.log(krAge);
