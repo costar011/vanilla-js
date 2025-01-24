@@ -17,4 +17,8 @@ const calculator = {
   
 };
 
-calculator.plus(5, 5);
+const plusreuslt = calculator.plus(2, 3);
+const minusreuslt = calculator.plus(plusreuslt, 11);
+const timereuslt = calculator.plus(10, minusreuslt);
+const dividereuslt = calculator.plus(timereuslt, plusreuslt);
+const powerreuslt = calculator.plus(dividereuslt, minusreuslt);
