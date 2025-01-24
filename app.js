@@ -1,9 +1,20 @@
-const age = 20;
+const calculator = {
+  plus: function(a, b) {
+    return a + b;
+  },
+  minus: function(a, b) {
+    return a - b;
+  },  
+  times: function(a, b) {
+    return a * b;
+  },    
+  divide: function(a, b) {
+    return a / b;
+  },  
+  power: function(a, b) {
+    return a ** b;
+  },  
+  
+};
 
-function calculate(age) {
-    return age + 2;
-}
-
-const krAge = calculate(20);
-
-console.log(krAge);
+calculator.plus(5, 5);
