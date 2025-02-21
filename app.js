@@ -6,4 +6,10 @@ function onLoginSubmit(event) {
   console.log(username);
 }
 
+function handleLinkClick(event) {
+  event.preventDefault();
+  console.dir(event);
+}
+
 loginButton.addEventListener("submit", onLoginSubmit);
+handleLinkClick.addEventListener("click", handleLinkClick);
