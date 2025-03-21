@@ -46,9 +46,18 @@ const savedUsername = localStorage.getItem(USERNAME_KEY);
 // form이 표시된다
 
 // 그 다음 일은 loginForm에 addEventListener를 더하고 submit 이벤트를 기다린다
+// 2번째
+// savedUsername이 null인 경우, 즉 유저 정보가 없는 경우
+// loginForm의 hidden 클래스를 제거하여 폼을 표시한다
+// 그리고 loginForm에 submit 이벤트를 추가하여 onLoginSubmit 함수를 호출한다
+
 if (savedUsername === null) {
   loginForm.classList.remove(HIDDEN_CLASSNAME);
   loginForm.addEventListener("submit", onLoginSubmit);
-} else {
+} 
+// 1번째
+// savedUsername이 null이 아닌 경우, 즉 유저 정보가 있는 경우
+// paintGreetings 함수를 호출하여 유저 정보를 화면에 표시한다
+else {
   paintGreetings(savedUsername);
 }
