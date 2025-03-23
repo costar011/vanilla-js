@@ -6,7 +6,6 @@ greeting.hidden = true;
 const HIDDEN_CLASSNAME = "hidden";
 const USERNAME_KEY = "username";
 
-
 // 3번쨰
 // submit 이벤트가 발생하면 onLoginSubmit 함수 실행
 // onLoginSubmit 함수는 event를 받는다
@@ -20,11 +19,11 @@ function onLoginSubmit(event) {
   event.preventDefault();
   loginForm.classList.add(HIDDEN_CLASSNAME);
   const username = loginInput.value;
-  localStorage.setItem("username", username);
-  paintGreetings(savedUsername);
+  localStorage.setItem(USERNAME_KEY, username);
+  paintGreetings();
 }
 
-function paintGreetings(username) {
+function paintGreetings() {
   greeting.innerHTML = `Hello ${username}`;
   greeting.classList.remove(HIDDEN_CLASSNAME);
 }
@@ -59,5 +58,5 @@ if (savedUsername === null) {
 // savedUsername이 null이 아닌 경우, 즉 유저 정보가 있는 경우
 // paintGreetings 함수를 호출하여 유저 정보를 화면에 표시한다
 else {
-  paintGreetings(savedUsername);
+  paintGreetings();
 }
